@@ -4,7 +4,7 @@ author: "CTLai"
 date: "March 31, 2018"
 ---
 
-###Transcript quantification assessment
+### Transcript quantification assessment
 
 In the previous video, we showed the model for quantification of each of three possible transcripts (also called "isoforms") of a gene. Here we will try to find the maximum likelihood estimate of for a given set of counts and lengths.
 
@@ -73,22 +73,22 @@ lm.fit(mat, LHS)$coefficients
 
 We note we are only roughly estimating theta, because we are not using the likelihood from our probabilitistic model for counts, but simply minizing the squared error between the left-hand side (LHS) and the right-hand side of the equation (recall the linear models covered in PH525.2x).
 
-####Transcript quant. Q1 
+#### Transcript quant. Q1 
 
 What is the estimate of theta using our rough estimator, for the first transcript (the transcript with exon 1 and exon 2)?
 
-#####ANS: 0.00075
+##### ANS: 0.00075
 
 ```{r}
 mat %*% theta.hat * lengths * w
 lm.fit(mat, LHS)$coefficients[1]
 ```
 
-####Transcript quant. Q2
+#### Transcript quant. Q2
 
 What would be the rough estimate of theta for the first transcript if the counts for exons and junctions were 60,320,420,60,140?
 
-#####ANS: 0.0002
+##### ANS: 0.0002
 
 ```{r}
 counts2=c(60,320,420,60,140)

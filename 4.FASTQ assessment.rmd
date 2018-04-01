@@ -4,7 +4,7 @@ author: "CTLai"
 date: "March 31, 2018"
 ---
 
-###FASTQC assessment 1
+### FASTQC assessment 1
 
 Here is the beginning of the file SRR1039508_1.fastq, which contains the first read of the pair for the experiment:
 
@@ -27,10 +27,10 @@ We will try to find the position of the third read using a simple BLAST search t
 
 On the BLAST search page, under Choose Search Set > Database > choose Genome (GRCh37.p13 reference assembly...)
 
-####FASTQ Q1
+#### FASTQ Q1
 The third read aligns uniquely to chromosome 16 of the human genome, falling in the second exon of the gene DHX38, which is on the plus strand (transcribed from left to right). What is the genomic position to which the first basepair of the third read aligns? (Use human genome build: hg19 / GRCh37)
 
-#####Ans: 72130081
+##### Ans: 72130081
 
 
 The first three reads in the second file are as follows:
@@ -50,28 +50,28 @@ The first three reads in the second file are as follows:
 
 Align the third read above to the human genome, as we did previously.
 
-####FASTQ Q2
+#### FASTQ Q2
 The third read in the second file also aligns uniquely to chromosome 16 of the human genome, aligning to the minus strand, also in the second exon of the gene DHX38. What is the genomic position to which the first basepair of the third read in the second file aligns?
 
-#####Ans: 72130242
+##### Ans: 72130242
 
-###FASTQC assessment 2
+### FASTQC assessment 2
 
 Unzip and open the FASTQC report for the second file. The following questions will ask about the information in this report. Remember you can check the FASTQC help files for more information (in particular the Analysis Modules explanations).
 
-####FASTQC Q1 
+#### FASTQC Q1 
 Which basepair has the lowest 10% quality score?
 
-#####Ans: 9
+##### Ans: 9
 
-####FASTQC Q2
+#### FASTQC Q2
 What base is most common in the first position of the read?
 
-#####Ans: T
+##### Ans: T
 
-####FASTQC Q3 
+#### FASTQC Q3 
 The sequence GGAAA spikes at position 10, what is the observed / expected value at this position for GGAAA?
 
-#####ANS: 5.1476827
+##### ANS: 5.1476827
 
 
