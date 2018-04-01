@@ -4,7 +4,7 @@ author: "CTLai"
 date: "March 31, 2018"
 ---
 
-###Genome alignment with STAR
+### Genome alignment with STAR
 
 The STAR homepage:
 
