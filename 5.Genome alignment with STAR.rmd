@@ -31,7 +31,8 @@ STAR --runMode genomeGenerate \
 --genomeDir GRCh38.91.chrom1 \
 --genomeFastaFiles genome/Homo_sapiens.GRCh38.dna.chromosome.1.fa \
 --sjdbGTFfile gtf/Homo_sapiens.GRCh38.91.chrom1.gtf \
---sjdbOverhang 62 
+--sjdbOverhang 62 \
+--limitGenomeGenerateRAM 1000000000
 ```
 
 Mapping the reads:
