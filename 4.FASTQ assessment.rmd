@@ -1,9 +1,9 @@
 ---
-title: "FASTQ assessment"
+title: "4.FASTQ assessment"
 author: "CTLai"
 date: "March 31, 2018"
-output: github_document
 ---
+
 ###FASTQC assessment 1
 
 Here is the beginning of the file SRR1039508_1.fastq, which contains the first read of the pair for the experiment:

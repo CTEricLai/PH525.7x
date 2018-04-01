@@ -1,0 +1,43 @@
+---
+title: "5.Genome alignment with STAR"
+author: "CTLai"
+date: "March 31, 2018"
+---
+
+###Genome alignment with STAR
+
+The STAR homepage:
+
+https://github.com/alexdobin/STAR
+
+Downloading genome FASTA and GTF files from ENSEMBL:
+
+http://ensembl.org
+
+Generating the genome:
+
+Note the `sjdbOverhang` is used for constructing the splice junction database. It should be set to (read length - 1), and according to the manual a general value of 100 will work as well.
+
+Subset the GTF file:
+
+```
+grep -P '^1\t' Homo_sapiens.GRCh38.91.gtf > Homo_sapiens.GRCh38.91.chrom1.gtf
+```
+
+The STAR command to generate the genome index:
+
+```
+STAR --runMode genomeGenerate \
+--genomeDir GRCh38.91.chrom1 \
+--genomeFastaFiles genome/Homo_sapiens.GRCh38.dna.chromosome.1.fa \
+--sjdbGTFfile gtf/Homo_sapiens.GRCh38.91.chrom1.gtf \
+--sjdbOverhang 62 
+```
+
+Mapping the reads:
+
+```
+STAR --runThreadN 12 \
+--genomeDir GRCh38.91.chrom1 \
+--readFilesIn fastq/SRR1039508_1.fastq fastq/SRR1039508_2.fastq
+```

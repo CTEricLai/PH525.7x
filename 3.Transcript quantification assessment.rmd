@@ -2,7 +2,6 @@
 title: "3.Transcript quantification assessment"
 author: "CTLai"
 date: "March 31, 2018"
-output: html_document
 ---
 
 ###Transcript quantification assessment
