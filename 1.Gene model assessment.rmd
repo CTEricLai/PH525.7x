@@ -2,8 +2,9 @@
 title: "1.Gene model assessment"
 author: "CTLai"
 date: "March 31, 2018"
-output: github_document
+output: html_document
 ---
+
 ###Gene model assessment
 In the previous video, we saw that a gene can have different transcripts, with potential different starting points and ending points, different exons, similar exons but with different lengths, etc.
 
@@ -22,4 +23,14 @@ In this short assessment, we will look up specific genes in the UCSC Genome Brow
 ####Gene model Q1
 According to the UCSC Genes track (it will be on top if you have the default arrangement), how many transcripts does RIT1 have? Note that the RefSeq Genes track below is a separate annotation of the same gene.
 
-#####ANS: 
+#####ANS: 3
+
+####Gene model Q2
+According to UCSC Genes track, how many exons does the top transcript of RIT1 (uc031pqc.1) have?
+
+#####ANS: 6
+
+####Gene model Q2
+Look up a nearby gene, CCT3. How many transcripts does this gene have, according to the UCSC Genes track?
+
+#####ANS: 5

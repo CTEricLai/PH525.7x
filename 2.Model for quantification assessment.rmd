@@ -1,0 +1,32 @@
+---
+title: "2.Model for quantification assessment"
+author: "CTLai"
+date: "March 31, 2018"
+output: html_document
+---
+
+###Model for quantification assessment
+
+In the previous video, we learned that, under an assumption of uniform sampling of reads from transcripts, the number of reads we observe for a given gene is proportional to the number of copies of the gene and the length of the gene.
+
+In this assessment, we will focus on a single gene. Suppose a gene has the following three transcripts, with k, the number of copies of the gene, and l, the length of the gene in basepairs.
+
+####Model for quant. Q1
+
+If we sequence from these RNAs uniformly at a rate of 1 read per 1 basepair, how many total reads will we expect on average for this gene?
+(l1=3000, k1=4; l2=1000, k2=7; l3=5000, k3=1)
+
+#####ANS: 24000 (3000 * 4 + 1000 * 7 + 5000 * 1)
+
+####Model for quant. Q2
+
+Now suppose, the proportion of each transcript changes, although the total number of copies of transcripts from the gene stays constant. Now we have:
+
+k1 = 7
+
+k2 = 4
+
+k3 = 1
+
+#####ANS: 30000 (3000 * 7 + 1000 * 4 + 5000 * 1)
+
