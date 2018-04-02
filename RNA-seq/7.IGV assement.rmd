@@ -1,0 +1,35 @@
+---
+title: "7.IGV assessment"
+author: "CTLai"
+date: "March 31, 2018"
+---
+
+### IGV assessment
+
+In this assessment we will use IGV to visualize the BAM file (reads aligned to hg19) seen in the previous video (which requires its index file as well).
+
+Once you have started IGV, you may have to click "More..." under genomes to get hg19.
+
+Zoom in to gene SRM which is within the range chr1:11,112,000-11,122,000.
+
+#### IGV Q1 
+
+A giveaway: which strand is this gene: plus or minus?
+
+##### ANS: minus
+
+#### IGV Q2 
+
+In the first exon (rightmost) there is an alternate allele (C) to the reference (T). What is the genomic location of this SNP? (The number of the basepair only, don't include the chromosome.)
+
+##### ANS: 11119899
+
+#### IGV Q3 
+
+Back in IGV, right click on the BAM file track and choose Squished. We want to count how many reads are in a particular intron. First we will make sure that we see all the possible reads.
+
+Click View > Preferences > Alignments tab. At the top, make sure that "Downsample reads" is NOT checked. Later if you are using IGV for your own work, you may want to check this again, as it speeds up the visualization. But for this question we want to see all the reads.
+How many reads are in the first intron (the rightmost intron)? (Just count by eye the number of reads falling entirely in this intron.)
+
+##### ANS: 3
+
