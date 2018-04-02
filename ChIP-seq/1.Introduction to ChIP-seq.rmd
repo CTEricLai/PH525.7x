@@ -1,0 +1,87 @@
+---
+title: "1.Introduction to ChlP-seq"
+author: "CTLai"
+date: "March 31, 2018"
+---
+
+### Introduction to transcription regulation Assessment
+
+#### Introduction to ChIP-seq assessment
+
+Which of the following is NOT true about transcription regulation? Read the question and choose carefully?
+
+1.transcription factors bind to chromatin in sequence-specific manner to regulate gene expression.
+
+2.genes co-expressed in different conditions are likely to be under the control of the same transcription factor.
+
+3.transcription factor binding in bacterial or yeast DNA can directly regulate genes far away.
+
+##### ANS: 3
+
+#### ChIP-seq technique assessment
+
+Which of the following is NOT true about ChIP-seq?
+
+1.ChIP stands for Chromatin Immuno Precipitation
+
+2.detect genome-wide in vivo binding site of transcription factors 
+
+3.chromatin is randomly sheared into smaller pieces
+
+4.can be done without a factor-specific antibody
+
+5.has noise from non-specific binding
+
+##### ANS: 4
+
+#### Peak Calling Assessment
+
+#### Peak Calling Assessment Q1
+
+How are ChIP-seq reads distributed around a transcription factor binding site. Two attempts allowed
+
+1.normally distributed
+
+2.plus-strand reads to the right and minus strand reads to the left of the precise binding site
+
+3.plus-strand reads to the left and minus strand reads to the right of the precise binding site
+
+4.uniformly distributed
+
+##### ANS: 3
+
+#### Peak Calling Assessment Q2
+
+If in most ChIP-seq read clusters, the plus and minus strand reads are often 120bp apart, how many basepair (bp) should we shift the reads in the 3' direction to better locate the precise binding site?
+
+#### ANS: 60
+
+#### Peak Calling Assessment Q3
+
+Which of the following is NOT true for MACS?
+
+1.uses a sliding window across the genome to find regions of ChIP enrichment 
+
+2.calculates statistical enrichment of reads in ChIP over control samples using a Poisson distribution 
+
+3.control reads over the peak region (~200-300bp) gives good estimate of background read distribution
+
+4.uses a dynamic background with a robust estimate of lamda parameter based on genome-wide background and the control over 1kb, 5kb, and 10kb to adjust any local chromatin or sequencing bias
+
+##### ANS: 3
+
+#### Quality control assessment 
+
+Which of the following is NOT true for ChIP-seq quality control (QC)?
+
+1.If the FASTQC is good (good sequencing quality), yet only small percentage of DNA can be uniquely mapped to the genome, then the sequencing facility should just re-sequence your sample
+
+2.Redundant ChIP-seq reads (same read sequenced many times) indicate small amount of ChIP DNA and PCR amplification bias. 
+
+3.ChIP-seq peak calling with MACS should be conducted by removing reads that can't be uniquely mapped to the genome and removing any redundant reads
+
+4.high percentage of ChIP-seq peak overlap with DNase hypersensitivity regions is an indicator of good data quality
+
+##### ANS: 1
+
+

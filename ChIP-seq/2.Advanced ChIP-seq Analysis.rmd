@@ -1,0 +1,156 @@
+---
+title: "2.Advanced ChIP-seq Analysis"
+author: "CTLai"
+date: "March 31, 2018"
+---
+
+### Advanced ChIP-seq Analysis
+
+#### CHIP-SEQ QC 2 Assessment
+
+#### Quality control II Q1
+
+Which of the following is true about evolutionary conservation of ChIP-seq peaks?
+
+1.for a working ChIP-seq of a transcription factor, the overall peaks should have better evolutionary conservation than genome background
+
+2.all ChIP-seq peaks should be conserved over evolution
+
+3.ChIP-seq sites not conserved over evolution are not functional
+
+ANS: 1
+
+#### Quality control II Q2
+
+Which of the following is NOT true about ChIP-seq QC? 
+
+1.for a working ChIP-seq, two biological replicates should have signal correlation > 0.95, similar to RNA-seq/transcriptome analysis
+
+2.for a working ChIP-seq of a transcription factor (TF), the TF's DNA binding motif should be enriched in center of the ChIP-seq peaks
+
+3.for a working TF ChIP-seq, the TF's DNA binding motif should be more enriched in the stronger peaks than the weaker peaks
+
+4.TF ChIP-seq often show signal enrichment at transcription start sites of genes
+
+##### ANS: 4
+
+#### CHIP-SEQ TARGET GENES ASSESSMENT
+
+#### Target gene Q1
+
+Which of the following is NOT true for finding the target gene of transcription factor binding sites.
+
+1.binding sites only influence the expression of the nearest gene in mammalian system 
+
+2.in mammalian system, a binding site after (3') the gene's transcription termination might still regulate the expression of the gene 
+
+3.a gene can be regulated by multiple nearby binding sites 
+
+4.one binding site can regulate multiple nearby genes
+
+5.the potential of a binding site to loop to a gene's promoter follows exponential decay propotional to the distance.
+
+##### ANS: 1
+
+#### Target gene Q1
+
+In a simple scenario where a transcription factor (TF) can have on / off states, and in an experiment the TF is turned on and we measured the TF binding during the on state, as well as the RNA expression of both the on and off states. Which of the following is true about transcription factor?
+
+1.if a gene's expression goes up when the TF becomes on, then the TF is a transcriptional activator 
+
+2.if a gene's expression goes up when the TF becomes on and binds ~80KB upstream from the transcription start sites (TSS) of the gene, then the TF is a transcriptional activator
+
+3.the TF is a transcriptional activator if genes with better regulatory potential of the TF binding (i.e. more binding sites and binding closer to the TSS of the genes) are more activated in expression than random genome background
+
+4.a TF is either a transcriptional activator or a transcriptional repressor 
+
+##### ANS: 3
+
+#### CHIP-SEQ EXAMPLE ASSESSMENT
+
+#### Example Q1 
+
+The following is NOT true for estrogen receptor (ER) binding sites
+
+1.estrogen receptor ChIP-seq will pull down many FoxA1 binding sites 
+
+2.the majority of the genome-wide estrogen receptor binding sites are conserved over vertebrate evolution
+
+3.estrogen receptor can both activate and repress gene expression 
+
+##### ANS: 2
+
+#### Cistrome Assessment
+
+#### Cistrome Q1
+
+The following is NOT true about Cistrome DB? 
+
+1.collects and processes public ChIP-seq and DNase-seq data in human and mouse
+
+2.can visualize the processed data in genome browsers 
+
+3.can find similar datasets to a particular dataset in the DB 
+
+4.can perform differential analysis of RNA-seq data 
+
+5.shows quality metrics of the data
+
+##### ANS: 4
+
+#### Cistrome Q2
+
+Which of the following are NOT used to quality control (QC) a processed ChIP-seq in Cistrome DB?
+
+1.mappability of the reads 
+
+2.low read redandency
+
+3.% of reads in peaks 
+
+4.overlap with DNase-seq peaks 
+
+5.overlap with genes
+
+6.motif enrichment in peaks 
+
+7.number of peaks with good fold enrichment 
+
+8.sequence quality 
+
+##### ANS: 5
+
+#### Beta Assessment
+
+#### BETA Q1
+
+BETA uses which of the following pieces of information to predict direct target genes?
+
+1.ChIP-seq binding peaks (.bed files) 
+
+2.Gene Expression Data 
+
+3.Constitutive CTCF binding sites
+
+4.Distance of binding site from transcription start site
+
+5.All of the above
+
+##### ANS: 5
+
+#### BETA Q1
+
+Which variant of BETA would you use to find motifs in ChIP-seq peaks associated with upregulated genes?
+
+1.BETA basic 
+
+2.BETA minus
+
+3.BETA plus
+
+4.BETA times
+
+5.BETA division
+
+##### ANS: 3
+
